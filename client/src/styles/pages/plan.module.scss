@@ -1,0 +1,142 @@
+.plans-page-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  .plan-menus {
+    height: calc(100% - 40px);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .plans-content-container {
+    width: calc(100% - 220px);
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .plan-list-container,
+  .plan-detail-container {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .plan-list-container {
+    flex: 4.5;
+    border-right: 1px solid #f2f2f2;
+  }
+
+  .plan-detail-container {
+    flex: 5.5;
+    position: relative;
+
+    .operation-bar-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px 10px 10px;
+        border-bottom: 1px solid #f2f2f2;
+
+        .left-container {
+
+        }
+
+        .right-container {
+
+        }
+    }
+
+    .plan-content-container {
+        padding: 10px 0;
+    }
+
+    .plan-detail-title-input {
+        font-weight: 600;
+        font-size: 16px !important;
+    }
+
+    .plan-detail-cardLink-input {
+        font-weight: 400;
+        font-size: 14px;
+        color: #888;
+    }
+
+    .plan-editor-container {
+        margin: 20px 10px;
+    }
+  }
+
+  .plan-collapse {
+    .ant-collapse-header {
+        padding: 12px 0;
+    }
+  }
+
+  .empty-detail {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+  }
+
+  .plan-item-container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    padding: 4px 10px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(225,246,255, 0.4);
+
+        .plan-item-content {
+            border-color: transparent;
+        }
+    }
+
+    .plan-checkbox {
+        position: relative;
+        top: 4px;
+    }
+
+    .plan-item-content {
+        margin-left: 10px;
+        border-bottom: 1px solid #f2f2f2;
+        width: 100%;
+
+        .plan-item-input {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .plan-thumbnail {
+            font-size: 12px;
+            color: #888;
+        }
+    }
+  }
+
+  .menu-container {
+    width: 220px;
+    height: 100%;
+    border-right: 1px solid #f2f2f2;
+  }
+
+  .menu-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    box-sizing: border-box;
+    height: 40px;
+    border-bottom: 1px solid #f2f2f2;
+    color: #666;
+
+    .menu-add-icon {
+        cursor: pointer;
+    }
+  }
+}

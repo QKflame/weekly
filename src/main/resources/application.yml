@@ -1,0 +1,22 @@
+spring:
+  mvc:
+    view:
+      prefix: classpath:/templates/
+      suffix: .html
+    thymeleaf:
+      mode: HTML
+      encoding: utf-8
+      cache: false
+    datasource:
+      url: jdbc:mysql://localhost:3306/weekly?characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
+      username: root
+      password: root
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    devtools:
+      restart:
+        enabled: true # 设置开启热部署
+    freemarker:
+      cache: false # 页面不加载缓存，修改及时生效
+
+server:
+  port: 8097

@@ -1,0 +1,13 @@
+{"properties": [{
+  "name": "spring.mvc.thymeleaf.cache",
+  "type": "java.lang.String",
+  "description": "A description for 'spring.mvc.thymeleaf.cache'"
+}]}{"properties": [{
+  "name": "spring.mvc.thymeleaf.encoding",
+  "type": "java.lang.String",
+  "description": "A description for 'spring.mvc.thymeleaf.encoding'"
+}]}{"properties": [{
+  "name": "spring.mvc.thymeleaf.mode",
+  "type": "java.lang.String",
+  "description": "A description for 'spring.mvc.thymeleaf.mode'"
+}]}
